@@ -215,7 +215,7 @@ function next(){
             cur.nextElementSibling.classList.add('current')
            
         }else{
-            document.querySelector('.quiz-div').innerHTML = `<div class="passs"> გამსვლელი ქულა:${poin}  <br>ტესტირება დასრულდა თქვენ გაქვთ <br><span class="text-success"> ${trueanswer} სწორი პასუხი </span> <br> <span class="text-danger"> ${falseanswer} არასწორი პასუხი</span> <br> ${Question.length} კითხვიდან <br>თქვენ დააგროვეთ: ${point} ქულა </div>` ;
+            document.querySelector('.quiz-div').innerHTML = `<div class="passs"> Minimum Score:${poin}  <br>Testing is complete.<br> You have: <br><span class="text-success"> ${trueanswer} correct answers </span> <br> <span class="text-danger"> ${falseanswer} Wrong answer </span> <br> from ${Question.length} questions <br>You have earned ${point} points </div>` ;
   
         }
         cur.classList.remove('current');
